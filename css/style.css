@@ -1,0 +1,130 @@
+</> CSS
+
+/* ==============================
+   FitLife Fitness Gym
+   Main Stylesheet
+   ============================== */
+
+   /* General page styling */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+    color: #f4c542;
+}
+
+/* Navigation */
+nav {
+    background-color: #f4c542;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #111;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Links and buttons */
+a {
+    color: #111;
+}
+
+main a {
+    display: inline-block;
+    background-color: #f4c542;
+    color: #111;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+main a:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;\
+    }
+
+    section {
+        padding: 20px;
+    }
+}
