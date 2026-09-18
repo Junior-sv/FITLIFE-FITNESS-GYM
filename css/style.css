@@ -1,15 +1,21 @@
-</> CSS
 
+
+
+```css
 /* ==============================
    FitLife Fitness Gym
    Main Stylesheet
    ============================== */
 
-   /* General page styling */
+/* General page styling */
 * {
-    margin: 0; 
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,15 +26,6 @@ body {
 }
 
 /* Header */
-footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    width: 100%;
-}
-
 header {
     background-color: #111;
     color: white;
@@ -58,6 +55,8 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin: 0 15px;
+    display: inline-block;
+    padding: 5px;
 }
 
 nav a:hover {
@@ -89,6 +88,15 @@ section p {
     margin-bottom: 15px;
 }
 
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
 /* Links and buttons */
 a {
     color: #111;
@@ -109,22 +117,175 @@ main a:hover {
     color: white;
 }
 
-/* Mobile responsive design */
+/* Forms */
+form {
+    width: 100%;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #f4c542;
+    color: #111;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #111;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* ==============================
+   TABLET RESPONSIVE DESIGN
+   Screens 768px and smaller
+   ============================== */
+
 @media (max-width: 768px) {
+
+    header {
+        padding: 25px 15px;
+    }
+
     header h1 {
-        font-size: 28px;
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        padding: 10px;
     }
 
     nav a {
         display: block;
-        margin: 10px 0;
+        margin: 8px 0;
+        padding: 8px;
     }
 
     main {
-        padding: 10px;\
+        width: 100%;
+        padding: 10px;
+        margin: 20px auto;
     }
 
     section {
         padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    main a {
+        padding: 10px 16px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px;
     }
 }
+
+/* ==============================
+   MOBILE RESPONSIVE DESIGN
+   Screens 480px and smaller
+   ============================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        padding: 8px;
+        font-size: 14px
+    }
+
+    main {
+        padding: 8px;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    section h2 {
+        font-size: 21px;
+    }
+
+    section p {
+        font-size: 15px;
+    }
+
+    main a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 13px;
+    }
+}
+
