@@ -1,61 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - FitLife Fitness Gym</title>
+
+    <title>Contact Us | FitLife Fitness Gym</title>
+
+    <meta name="description" content="Get in touch with FitLife Fitness Gym in Johannesburg. Find our contact details, opening hours and location.">
+
+    <meta name="keywords" content="contact FitLife Gym, gym Johannesburg, fitness centre contact">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- Header Section -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header>
-        <h1>FitLife Fitness Gym</h1>
+        <h1>Contact FitLife Fitness Gym</h1>
         <p>Stronger Every Day.</p>
     </header>
 
-    <!-- Navigation Menu -->
-     <nav>
+    <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
         <a href="enquiry.html">Enquiry</a>
         <a href="contact.html">Contact</a>
-     </nav>
+    </nav>
 
-     <!-- Main Content -->
-      <main>
+    <main id="main-content">
 
         <section>
-            <h2>Contact Us</h2>
+            <h2>Get in Touch</h2>
 
             <p>
-                We would love to hear from you. Contact FitLife
-                Fitness Gym using the information below.
+                We would love to hear from you. Contact us using
+                the details below if you have any questions about
+                FitLife Fitness Gym.
+            </p>
+
+            <h3>Contact Details</h3>
+
+            <p><strong>Phone:</strong> 063 878 8652</p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:info@fitlifegym.co.za">
+                    info@fitlifegym.co.za
+                </a>
+            </p>
+
+            <p>
+                <strong>Address:</strong>
+                123 Fitness Street, Johannesburg, South Africa
+            </p>
+
+            <h3>Opening Hours</h3>
+
+            <p>Monday – Saturday: 06:00 – 20:00</p>
+            <p>Sunday: Closed</p>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+
+            <form id="contactForm" novalidate>
+
+                <label for="contactName">Full Name:</label>
+                <input type="text"
+                       id="contactName"
+                       name="contactName"
+                       placeholder="Enter your full name"
+                       required>
+
+                <label for="contactEmail">Email Address:</label>
+                <input type="email"
+                       id="contactEmail"
+                       name="contactEmail"
+                       placeholder="Enter your email"
+                       required>
+
+                <label for="contactMessage">Message:</label>
+                <textarea id="contactMessage"
+                          name="contactMessage"
+                          rows="5"
+                          placeholder="Write your message..."
+                          required></textarea>
+
+                <button type="submit" class="button">
+                    Send Message
+                </button>
+
+                <p id="contactFeedback"
+                   role="status"
+                   aria-live="polite"></p>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Our Location</h2>
+
+            <p>
+                Find us in Johannesburg, South Africa.
+                Please confirm our address before visiting.
+            </p>
+
+            <iframe
+                title="Map showing Johannesburg"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=28.00%2C-26.25%2C28.10%2C-26.15&layer=mapnik"
+                width="100%"
+                height="350"
+                style="border:1px solid #ccc;"
+                loading="lazy">
+            </iframe>
+
+            <p>
+                <a href="https://www.openstreetmap.org/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View OpenStreetMap
+                </a>
             </p>
         </section>
 
-        <section>
-            <h2>Our Contact Details</h2>
+    </main>
 
-            <p><strong>Pone:</strong> 063 878 8652</p>
-
-            <p><strong>Email:</strong> info@fitlifegym.co.za</p>
-
-            <p><strong>Address:</strong> 123 Fitness Street, Johannesburg, South Africa</p>
-
-            <p><strong>Opening Hours:</strong> Monday - Saturday, 06:00 - 20:00</p>
-        </section>
-
-      </main>
-
-      <!-- Footer -->
-      <footer>
-        <p>&copy; 2026 FitLife Fitness Gym. All rights reserved</p>
-      </footer>
+    <footer>
+        <p>&copy; 2026 FitLife Fitness Gym. All rights reserved.</p>
+        <p><a href="sitemap.html">Website Sitemap</a></p>
+    </footer>
 
 </body>
-
 </html>

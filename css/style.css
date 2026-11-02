@@ -1,13 +1,10 @@
 
+/* =====================================
+   FITLIFE FITNESS GYM
+   MAIN STYLESHEET - PART 3
+===================================== */
 
-
-```css
-/* ==============================
-   FitLife Fitness Gym
-   Main Stylesheet
-   ============================== */
-
-/* General page styling */
+/* General settings */
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +17,24 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: #f4c542;
+    color: #111;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    z-index: 1000;
 }
 
 /* Header */
@@ -35,57 +47,69 @@ header {
 
 header h1 {
     font-size: 36px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 header p {
-    font-size: 18px;
     color: #f4c542;
+    font-size: 18px;
 }
 
 /* Navigation */
 nav {
     background-color: #f4c542;
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
 }
 
 nav a {
     color: #111;
     text-decoration: none;
+    padding: 10px 18px;
     font-weight: bold;
-    margin: 0 15px;
-    display: inline-block;
-    padding: 5px;
+    transition: background-color 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
+    background-color: #111;
     color: white;
+    border-radius: 5px;
 }
 
-/* Main Content */
+/* Main content */
 main {
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 25px auto;
     padding: 0 20px;
 }
 
 section {
     background-color: white;
-    padding: 30px;
+    padding: 25px;
     margin-bottom: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-section h2 {
+h2 {
     color: #111;
     margin-bottom: 15px;
-    font-size: 28px;
 }
 
-section p {
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+p {
     margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 25px;
 }
 
 /* Images */
@@ -97,60 +121,104 @@ img {
     border-radius: 8px;
 }
 
-/* Links and buttons */
-a {
-    color: #111;
-}
-
-main a {
-    display: inline-block;
-    background-color: #f4c542;
-    color: #111;
-    padding: 12px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-main a:hover {
-    background-color: #111;
-    color: white;
-}
-
-/* Forms */
-form {
-    width: 100%;
-}
-
-input,
-textarea,
-select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
+/* Buttons */
+.button,
 button {
+    display: inline-block;
     background-color: #f4c542;
     color: #111;
     border: none;
     padding: 12px 20px;
-    font-weight: bold;
+    margin-top: 10px;
     border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
+.button:hover,
 button:hover {
-    background-color: #111;
-    color: white;
+    background-color: #d9aa22;
+    transform: translateY(-2px);
+}
+
+/* Forms */
+form {
+    max-width: 650px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #f4c542;
+    border-color: #111;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* FAQ accordion */
+.faq-item {
+    margin-bottom: 12px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+}
+
+.faq-answer {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-left: 4px solid #f4c542;
+}
+
+/* Service search */
+#serviceSearch {
+    max-width: 500px;
+}
+
+/* Sitemap */
+.sitemap-list li {
+    margin-bottom: 12px;
+}
+
+.sitemap-list a {
+    color: #222;
+    font-weight: bold;
+}
+
+.sitemap-list a:hover {
+    color: #b38a0d;
+}
+
+/* Feedback messages */
+#enquiryFeedback,
+#contactFeedback,
+#searchMessage {
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -160,69 +228,46 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
-    width: 100%;
 }
 
-/* ==============================
-   TABLET RESPONSIVE DESIGN
-   Screens 768px and smaller
-   ============================== */
+footer a {
+    color: #f4c542;
+    text-decoration: none;
+}
 
-@media (max-width: 768px) {
+footer a:hover {
+    text-decoration: underline;
+}
 
-    header {
-        padding: 25px 15px;
-    }
+/* Responsive design - Tablets */
+@media screen and (max-width: 768px) {
 
     header h1 {
-        font-size: 30px;
-    }
-
-    header p {
-        font-size: 16px;
+        font-size: 28px;
     }
 
     nav {
-        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav a {
-        display: block;
-        margin: 8px 0;
-        padding: 8px;
+        width: 100%;
+        text-align: center;
     }
 
     main {
-        width: 100%;
-        padding: 10px;
-        margin: 20px auto;
+        margin: 15px auto;
+        padding: 0 12px;
     }
 
     section {
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-
-    main a {
-        padding: 10px 16px;
-    }
-
-    footer {
-        padding: 15px;
-        font-size: 14px;
+        padding: 18px;
     }
 }
 
-/* ==============================
-   MOBILE RESPONSIVE DESIGN
-   Screens 480px and smaller
-   ============================== */
-
-@media (max-width: 480px) {
+/* Responsive design - Mobile phones */
+@media screen and (max-width: 480px) {
 
     header {
         padding: 20px 10px;
@@ -233,59 +278,28 @@ footer {
     }
 
     header p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    nav {
-        padding: 8px;
-    }
-
-    nav a {
-        display: block;
-        margin: 5px 0;
-        padding: 8px;
-        font-size: 14px
-    }
-
-    main {
-        padding: 8px;
-        margin: 15px auto;
+    body {
+        font-size: 15px;
     }
 
     section {
         padding: 15px;
-        margin-bottom: 15px;
     }
 
-    section h2 {
-        font-size: 21px;
-    }
-
-    section p {
-        font-size: 15px;
-    }
-
-    main a {
+    .button,
+    button {
         width: 100%;
         text-align: center;
-        padding: 12px;
     }
 
     input,
-    textarea,
-    select {
-        font-size: 15px;
-        padding: 10px;
-    }
-
-    button {
-        width: 100%;
-        padding: 12px;
-    }
-
-    footer {
-        padding: 15px 10px;
-        font-size: 13px;
+    select,
+    textarea {
+        font-size: 16px;
     }
 }
+
 

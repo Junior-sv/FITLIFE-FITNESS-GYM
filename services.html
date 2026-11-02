@@ -1,23 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - FitLife Fitness Gym</title>
-    <link rel="stylesheet" href="css/style.css"
+
+    <title>Our Services | FitLife Fitness Gym</title>
+
+    <meta name="description" content="Explore FitLife Fitness Gym services, including personal training, group fitness classes and gym equipment in Johannesburg.">
+
+    <meta name="keywords" content="gym services Johannesburg, personal training, group fitness, gym equipment">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header Section -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header>
-        <h1>FitLife Fitness Gym</h1>
+        <h1>Our Services</h1>
         <p>Stronger Every Day.</p>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav>
+    <nav aria-label="Main navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
@@ -25,48 +31,86 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Main Content -->
-     <main>
+    <main id="main-content">
 
         <section>
-            <h2>Our Services</h2>
+            <h2>What We Offer</h2>
 
             <p>
-                FitLife Fitness Gym offers a range of services designed to help members improve their fitness and reach their personal goals.
+                FitLife Fitness Gym offers different services to help
+                members improve their fitness and achieve their goals.
             </p>
         </section>
 
-        <section>
+        <section class="service-card">
             <h2>Personal Training</h2>
 
+            <img src="images/pexels-ketut-subiyanto-4720796.jpg"
+                 alt="Person doing a personal fitness workout">
+
             <p>
-                Our personal training service provides individual guidance and exercise support to help members train safely and effectively.
+                Personal training provides individual support and
+                guidance to help members work towards their fitness goals.
             </p>
+
+            <a class="button" href="enquiry.html">
+                Enquire About Personal Training
+            </a>
         </section>
 
-        <section>
+        <section class="service-card">
             <h2>Group Fitness Classes</h2>
 
+            <img src="images/pexels-amar-9958670.jpg"
+                 alt="People participating in a group fitness workout">
+
             <p>
-                Join our group fitness classes and exercise with other members in a friendly and motivating environment.
+                Group fitness classes allow members to exercise together
+                in a motivating and supportive environment.
             </p>
+
+            <a class="button" href="enquiry.html">
+                Enquire About Group Classes
+            </a>
+        </section>
+
+        <section class="service-card">
+            <h2>Gym Equipment</h2>
+
+            <img src="images/pexels-jdgromov-4716816.jpg"
+                 alt="Fitness equipment used for gym training">
+
+            <p>
+                Members can use gym equipment to support different
+                exercises and improve their overall fitness.
+            </p>
+
+            <a class="button" href="enquiry.html">
+                Enquire About Gym Equipment
+            </a>
         </section>
 
         <section>
-            <h2>Gym Equipment</h2>
+            <h2>Find a Service</h2>
 
-            <p>
-                Members have access to a variety of gym equipment for strength training, cardio exercises and general fitness.
-            </p>
+            <p>Type a service name to search our services:</p>
+
+            <input type="search"
+                   id="serviceSearch"
+                   placeholder="Search services..."
+                   aria-label="Search gym services">
+
+            <p id="searchMessage" aria-live="polite"></p>
         </section>
 
-     </main>
+    </main>
 
-     <!-- Footer -->
-      <footer>
+    <footer>
         <p>&copy; 2026 FitLife Fitness Gym. All rights reserved.</p>
-      </footer>
+        <p><a href="sitemap.html">Website Sitemap</a></p>
+    </footer>
+
+    <script src="js/script.js" defer></script>
 
 </body>
-
 </html>

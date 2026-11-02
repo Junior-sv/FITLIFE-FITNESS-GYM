@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: 123 Fitness Street, Johannesburg, South Africa
