@@ -125,3 +125,19 @@ The gym address and map location should be confirmed before the website is publi
 ## 12. Conclusion
 
 The FitLife Fitness Gym website provides visitors with information about the organisation and its services. Part 3 improves the website by adding interactive features, SEO improvements, form validation and responsive design.
+
+1. GitHub, 2026. GitHub Pages documentation. [online] Available at: https://docs.github.com/en/pages [Accessed 2 November 2026].
+
+2. Google, 2026. SEO Starter Guide. [online] Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide [Accessed 2 November 2026].
+
+3. Mozilla, 2026. CSS: Cascading Style Sheets. MDN Web Docs. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 2 November 2026].
+
+4. Mozilla, 2026. HTML: HyperText Markup Language. MDN Web Docs. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/HTML [Accessed 1 November 2026].
+
+5. Mozilla, 2026. JavaScript Guide. MDN Web Docs. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide [Accessed 1 November 2026].
+
+6. Mozilla, 2026. Client-side form validation. MDN Web Docs. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation [Accessed 1 November 2026].
+
+7. W3C, 2026. Web Content Accessibility Guidelines (WCAG) 2.2. [online] Available at: https://www.w3.org/TR/WCAG22/ [Accessed 1 November 2026].
+
+8. W3Schools, 2026. Responsive Web Design. [online] Available at: https://www.w3schools.com/css/css_rwd_intro.asp [Accessed 1 November 2026].
